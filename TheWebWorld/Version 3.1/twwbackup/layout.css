@@ -1,0 +1,46 @@
+* { margin:0; padding:0;}
+.col1, .col2, .col3, .col4 {float:left}
+.clear { clear:both;}
+
+.w{ width:100%}
+.site_center{text-align:center; width:100%;}
+.site_center1{margin:0 auto; text-align:left; width:708px; }
+
+/*header*/
+#header{height:216px; background:url(images/top.gif) no-repeat right top} 
+
+/*content*/ 
+#content{ width:708px; background:url(images/line1.gif) no-repeat  bottom}
+#content .row1 { width:100%}
+ 
+/*index.html*/
+#page1 #content .col1 { width:465px}
+#page1 #content .col2 { width:236px}
+#page1 #content .col3 { width:235px}
+#page1 #content .col4 { width:230px}
+/*index-1.html*/
+#page2 #content .col1 { width:235px}
+#page2 #content .col2 { width:466px}
+#page2 #content .col3 { width:214px}
+#page2 #content .col4 { width:206px}
+/*index-2.html*/
+#page3 #content .col1 { width:465px}
+#page3 #content .col2 { width:236px}
+#page3 #content .col3 { width:214px}
+#page3 #content .col4 { width:206px}
+/*index-3.html*/
+#page4 #content .col1 { width:235px}
+#page4 #content .col2 { width:466px}
+#page4 #content .col3 { width:205px}
+#page4 #content .col4 { width:216px}
+/*index-4.html*/
+#page5 #content .col1 { width:465px}
+#page5 #content .col2 { width:236px}
+#page5 #content .col3 { width:201px}
+#page5 #content .col4 { width:216px}
+/*index-4.html*/
+#page6 #content .col1 { width:701px}
+
+
+ /*footer*/
+#footer {height:97px; width:708px}

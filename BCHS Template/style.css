@@ -1,0 +1,92 @@
+body { background-color: #354453;
+   }
+
+/*--------------------------------------------*/
+/*Container 			              */
+/*--------------------------------------------*/
+#page-container {
+    width:800px;
+    margin:2px auto;
+    border:1px solid #000000;
+    background: #efeeee url(images/container.gif);
+}
+
+/*Header*/
+
+#header {
+   background-color: #242e37;
+   height:85px;
+   width:800px;
+   line-height: 85px;
+   text-align: center;
+   color: #ffffff;
+   font-weight: bold;
+   font-size: xx-large;
+   border-bottom: 1px solid #000000;
+}
+
+
+/*Location Bar */
+
+.locbar {
+   width: 800px;
+   height: 25px;
+   line-height: 25px;
+   background-color: #333333;
+   color: #ffffff;
+   text-indent: 3px;
+   border-bottom: 1px solid #000000;
+}
+
+
+/*Navigation*/
+
+.navlink {
+   width: 800px;
+   height: 20px;
+   line-height: 20px;
+   background-color: #8fa1b3;
+   color: #000000;
+   text-decoration: none;
+}
+
+
+/*Left image bar*/
+
+.imagebar {
+   width:210px; 
+   margin:0;
+   float:left;
+   background-color: #6d87a1;
+text-align: center;
+}
+
+.imagebar img {
+   padding-top: 2px;
+}
+
+/*Content area*/
+
+.content {
+    width: 570px;
+    text-align:left;
+    padding:10px 10px 10px;
+    float: right;
+    color: #ffffff;
+}
+
+
+/*Footer*/
+
+#footer {
+    width:800px;
+    height:30px;
+    background-color:#242e37;
+    text-align:center;
+    word-spacing:4px;
+    border-top:1px solid #000000;
+    color: #ffffff;
+    line-height: 30px;
+    font-size:90%;
+    clear:both;
+}

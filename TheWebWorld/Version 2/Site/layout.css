@@ -1,0 +1,53 @@
+#site_center {text-align:center;}
+#main {width:768px; margin:0 auto; text-align:left;}
+
+#header {height:412px;}
+#header, #content, #footer { font-size:0.69em;}
+
+.col_1, .col_2, .col_3, .column1, .column2, .column3 { float:left;}
+
+/*======= index.html =======*/
+#page1 #content .row_1 .wrapper { background:url(images/line1.gif) 362px 0 repeat-y; width:717px;}
+#page1 #content .row_1 {background:url(images/block_bgd.gif) left top repeat-x; padding-top:36px; padding-bottom:41px;}
+#page1 #content .row_1 .col_1 {width:395px;}
+#page1 #content .row_1 .col_2 { width:290px;}
+#page1 #content .row_2 { padding:0 0 14px 18px;}
+#page1 #content .row_2 .col_1 { width:365px;}
+#page1 #content .row_2 .col_2 { width:232px;}
+#page1 #content .row_3 { padding:0 0 0 18px;}
+#page1 #content .row_3 .wrapper { background:url(images/line1.gif) 337px 0 repeat-y; width:680px;}
+#page1 #content .row_3 .col_1 { width:369px;}
+#page1 #content .row_3 .col_2 { width:272px;}
+
+/*======= index-1.html =======*/
+#page2 #content .row_1 .wrapper { background:url(images/line1.gif) 362px 0 repeat-y; width:717px;}
+#page2 #content .row_1 {background:url(images/block_bgd.gif) left top repeat-x; padding-top:36px; padding-bottom:11px;}
+#page2 #content .row_1 .col_1 {width:395px;}
+#page2 #content .row_1 .col_2 { width:290px;}
+#page2 #content .row_2 { padding:0 0 1px 18px;}
+#page2 #content .row_2 .wrapper { background:url(images/line1.gif) 337px 0 repeat-y; width:680px;}
+#page2 #content .row_2 .col_1 { width:379px;}
+#page2 #content .row_2 .col_2 { width:290px;}
+
+/*======= index-2.html =======*/
+#page3 #content .row_1 .wrapper { background:url(images/line1.gif) 362px 0 repeat-y; width:717px;}
+#page3 #content .row_1 {background:url(images/block_bgd.gif) left top repeat-x; padding:36px 0 36px 18px;}
+#page3 #content .row_1 .col_1 { width:365px;}
+#page3 #content .row_1 .col_2 { width:231px;}
+#page3 #content .row_2 { padding:0 20px 14px 36px;}
+
+/*======= index-3.html =======*/
+#page4 #content .row_1 {padding:49px 52px 42px 36px; background:url(images/block_bgd.gif) left top repeat-x;}
+#page4 #content .row_2 .col_1 { width:222px;}
+#page4 #content .row_2 .col_2 { width:221px;}
+#page4 #content .row_2 .col_3 { width:188px;}
+#page4 #content .row_3 {padding:0 0 0 18px;}
+
+/*======= index-4.html =======*/
+#page5 #content .row_1 {padding:48px 60px 42px 35px; background:url(images/block_bgd.gif) left top repeat-x;}
+
+
+/*=========================*/
+
+
+#footer {height:62px;}

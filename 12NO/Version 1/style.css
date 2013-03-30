@@ -1,0 +1,104 @@
+td {
+	text-align: left;
+	font-family:tahoma;
+	font-size:11px;
+	color:#333333;
+	line-height:12px;
+}
+a {
+	text-decoration:underline;
+	color:#1067B3;
+}
+
+body { 	margin:0px;padding:0px; background:url(images/top_px.jpg) top repeat-x #BDD0E1}
+
+.copy{
+font-family:tahoma;
+color:#838383;
+text-decoration:none;
+}
+
+
+.gray {color:#333333; text-decoration:none}
+.gray_d {color:#404040; text-decoration:none}
+.blue_l {color:#1067B3; text-decoration:none}
+.blue {color:#003366; text-decoration:none}
+.white {color:#ffffff; text-decoration:none}
+
+
+.verdana {font-family:verdana; line-height:15px; font-size:9px}
+.abs {vertical-align:middle}
+.sm {font-size:10px}
+.u {text-decoration:underline}
+.nu {text-decoration:none}
+.t {text-transform:uppercase}
+.big {font-size:11px}
+
+
+.form_news { width:96px;
+		height:18px;
+		font-family:tahoma;
+		font-size:12px;
+		border-style:solid;
+		border-width:1px;
+		border-color:#878787;
+		background-color:#ffffff;
+		color:#333333;
+		margin-left:0px;
+		margin-right:0px}
+		
+.form_domain { width:82px;
+		height:18px;
+		font-family:tahoma;
+		font-size:11px;
+		border-style:solid;
+		border-width:1px;
+		border-color:#878787;
+		background-color:#ffffff;
+		color:#333333;
+		margin-left:0px;
+		margin-right:0px}
+
+.form { width:139px;
+		height:18px;
+		font-family:tahoma;
+		font-size:11px;
+		border-style:;
+		border-width:;
+		border-color:#;
+		background-color:#ffffff;
+		color:#616161;
+		margin-left:0px;
+		margin-right:0px}
+		
+.textarea {width:139px;
+		height:93px;
+		font-family:tahoma;
+		font-size:11px;
+		border-style:;
+		border-width:;
+		border-color:#;
+		background-color:#ffffff;
+		color:#616161;
+		overflow:hidden;
+		margin-left:0px;
+		margin-right:0px;}
+
+.rollover {scrollbar-face-color:#B6E9FF;
+		scrollbar-track-color:#FCFEFF;
+		scrollbar-arrow-color:#FCFEFF;
+		scrollbar-3Dlight-color:#FCFEFF;
+		scrollbar-base-color:#FCFEFF;
+		scrollbar-shadow-color:#FCFEFF;
+		scrollbar-darkshadow-color:#FCFEFF;
+		scrollbar-highlight-color:#FCFEFF;
+		}
+
+
+a:hover{text-decoration:none;}
+
+.a:hover{text-decoration:underline;}
+
+
+
+

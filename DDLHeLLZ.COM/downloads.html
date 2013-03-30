@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta name="author" content="Gray Thought" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>DDLHeLLZ.COM - Downloads</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+border-bottom-width: 0;
+font-family: arial, sans-serif;
+font-size: .8em;
+line-height:18px;
+z-index:100;
+list-style: none;
+color: #FFFFFF;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 3px;
+border-bottom: 1px solid black;
+padding: 1px 0;
+text-decoration: none;
+font-weight: bold;
+color: #FFFFFF;
+font-family: arial, sans-serif; 
+font-size: .8em;
+list-style: none;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #016EC3;
+text-decoration: none;
+}
+
+</style>
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var shared=new Array()
+shared[0]='<a href="aboutus.html">About Us</a>'
+shared[1]='<a href="reviews.html">Reviews</a>'
+shared[2]='<a href="contactus.html">Contact Us</a>'
+
+//Contents for menu 2, and so on
+var vps=new Array()
+vps[0]='<a href="guides.html">Guides</a>'
+vps[1]='<a href="#">All Guides</a>'
+
+var reseller=new Array()
+reseller[0]='<a href="downloads.html">Access Downloads</a>'
+reseller[1]='<a href="pdownloads.html">Premium Downloads</a>'
+
+var about=new Array()
+about[0]='<a href="services.html">Our Services</a>'
+about[1]='<a href="whatwedo.html">What We Do</a>'
+
+var support=new Array()
+support[0]='<a href="friends.html">Our Friends</a>'
+
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='#0D8FE3'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+</head>
+
+<body>
+
+<div id="top_shadow"></div>
+
+<!--START HEADER-->
+<div id="header"> <img id="logo" src="hcs_images/logo.jpg" alt="HostChum" />
+  <div id="topright_area"><br />
+      <img src="hcs_images/live_chat-1.jpg" alt="Contact Us" width="100" height="48" usemap="#Map" />
+      <map name="Map" id="Map">
+        <area shape="rect" coords="3,1,112,65" href="contactus.html" alt="" />
+      </map>
+  </div>
+  <!--END HEADER-->
+</div>
+<div id="navigation">
+  <ul>
+    <li><a id="navi-home" href="index.html"><span>Home</span></a></li>
+    <li><a id="navi-shared" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, shared, '116px')" onmouseout="delayhidemenu()" href="#"><span>About Us</span></a></li>
+    <li><a id="navi-reseller" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, reseller, '125px')" onmouseout="delayhidemenu()" href="#"><span>Downloads</span></a></li>
+    <li><a id="navi-vps" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, vps, '103px')" onmouseout="delayhidemenu()" href="#"><span>Guides</span></a></li>
+    <li><a id="navi-about" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, about, '102px')" onmouseout="delayhidemenu()" href="#"><span>Services</span></a></li>
+    <li><a id="navi-support" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, support, '109px')" onmouseout="delayhidemenu()" href="#"><span>Friends</span></a></li>
+  </ul>
+</div>
+<!--BEGIN CONTENT--><div id="content">
+<table id="wh-table2" border="0">
+<tr><th width="723" class="wh-feature2 wh-ntp2"><div align="center">Downloads</div></th> 
+<tr>
+  <td class="wh-feature3"><div id="lipsum">
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec dolor  at urna pulvinar pharetra. Integer laoreet vehicula felis non sagittis.  Pellentesque venenatis vulputate sagittis. Aliquam eu scelerisque  libero. Class aptent taciti sociosqu ad litora torquent per conubia  nostra, per inceptos himenaeos. Ut mattis nisl at magna lacinia feugiat  ut sit amet nisl. Proin eget purus ante. Duis urna nulla, hendrerit vel  cursus vel, fermentum id neque. Integer id nibh vel arcu porta posuere.  Suspendisse commodo, nibh vitae consectetur ornare, risus mauris  condimentum sem, eu aliquet quam dolor a justo. Nulla quam felis,  accumsan sit amet lacinia vel, posuere sed quam. Maecenas augue mi,  accumsan dapibus dapibus at, malesuada sit amet leo. Sed laoreet rutrum  elementum. Phasellus pellentesque mattis libero vel mollis. Aliquam  auctor nulla nec tortor auctor vel sodales libero porta. Nullam nisi  urna, cursus eget blandit semper, viverra vitae est. Ut eu faucibus  erat. Donec augue ante, tempor ac molestie vitae, aliquam sit amet  eros. Praesent egestas, nulla sit amet molestie ultricies, leo lorem  iaculis massa, ultrices dignissim enim lorem in nibh. </p>
+    <p>Vivamus quis libero sit amet nibh lobortis scelerisque. In hac  habitasse platea dictumst. Aenean ut elementum neque. Etiam sed massa  id elit dignissim accumsan. Etiam mollis egestas tincidunt. Aenean  egestas, nulla quis semper luctus, dui ligula interdum purus, vel  aliquam tellus dui ut mauris. Vivamus ultricies rutrum ultricies.  Pellentesque sed porta nisi. Quisque viverra bibendum erat vitae  pharetra. Class aptent taciti sociosqu ad litora torquent per conubia  nostra, per inceptos himenaeos. Sed a sem mauris, eget ultrices lacus.  Aenean vitae sapien augue. Phasellus vitae eros vitae dui venenatis  semper. Integer gravida fringilla ligula quis mattis. Suspendisse  blandit posuere ipsum, non imperdiet massa convallis sed. Maecenas  convallis lobortis est non pulvinar. Vestibulum sagittis ullamcorper  orci, sed bibendum dui ultricies sed. Duis sed eleifend odio. Integer  at velit tristique ligula rutrum aliquam. Cras faucibus pellentesque  felis, id scelerisque massa porta ac. </p>
+    <p>Phasellus elementum urna non erat auctor et tempus tortor congue.  Nunc risus turpis, rutrum vel suscipit ut, mollis at augue. Quisque  sodales facilisis sem, eu euismod dolor blandit ut. Morbi in mauris sed  tellus dictum tempor vel ac sapien. Cras semper, est vitae tincidunt  pellentesque, nibh turpis condimentum ligula, nec lobortis magna mi vel  est. Curabitur semper porttitor enim, sit amet adipiscing quam commodo  mattis. Etiam eget nulla turpis, auctor pellentesque ligula. Donec  vehicula lectus et enim venenatis quis fermentum lectus pellentesque.  Cras dignissim tellus et nunc pellentesque congue. Curabitur et nibh  nec diam ornare ornare. Aliquam erat volutpat. Quisque semper laoreet  orci quis feugiat. Proin mauris nisi, convallis et mattis a, luctus at  justo. Mauris vulputate ullamcorper ullamcorper. Suspendisse sit amet  mi ut sem pretium interdum vitae sed est. Nulla facilisi. Sed dictum  rutrum velit, nec venenatis sem imperdiet sit amet. </p>
+  </div>
+  <p>&nbsp;</p>
+
+    </tr>
+</table>
+
+<!--STOP CONTENT--></div>
+
+
+<div id="footer">
+  <ul id="footer_links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="downloads.html">Downloads</a></li>
+    <li><a href="guides.html">Guides</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="friends.html">Friends</a></li>
+  </ul>
+  <div id="copyright">&#169; 2008-2009 DDLHeLLZ.COM. All rights reserved.</div>
+</div>
+</body>
+
+</html>

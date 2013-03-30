@@ -1,0 +1,71 @@
+body {
+    background: #E9E9E9;
+    color: #1a1a1a;
+    font: normal normal 13px/18px "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+    text-shadow: 0 0 1px rgba(0,0,0,0.01);
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    color: #b83000;
+}
+
+h1 {
+    background: #E9E9E9;
+    color: #1a1a1a;
+    font: normal normal 13px/18px "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+    text-shadow: 0 0 1px rgba(0,0,0,0.01);
+    text-rendering: optimizeLegibility;
+	border: 1px dotted #999;
+}
+
+#wrapper {
+    margin: 18px 2em;
+    padding: 13px 0 18px; /* top - 18px with border */
+    width: 60em;
+    border-top: 5px solid #1a1a1a;
+	text-align: center
+}
+
+#header {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+#info {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+#content {
+    margin: 3em 0 2em;
+}
+
+#footer {
+    border-top: 3px double #e0e0e0;
+    padding-top: 8px; /* 9px with border */
+    color: #aaa;
+}
+
+h2 span {
+    font-size: 13px;
+    font-weight: normal;
+    color: #888;
+}
+div#main {
+	width:600px;
+	margin:auto;
+	position:relative;
+}
+	div#main div.separator {
+		width:100%;
+		border-top:#fff 5px solid;
+		margin:5px 0;
+}

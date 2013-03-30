@@ -1,0 +1,55 @@
+#main {margin:0 auto; width:729px; background:#35312f; padding-bottom:12px;}
+
+#header_logo{height:75px}
+#header_menu{ height:63px;}
+#header_content{margin:0 0 0 11px; width:707px;}
+
+.col_1, .col_2, .col_3, .separate, .col_box_1, .col_box_2{ float:left;}
+
+/*======= index.html =======*/
+#page1 #content .col_1{width:297px;}
+#page1 #content .col_2{width:376px;}
+/*=========================*/
+
+/*======= index-1.html =======*/
+#page2 #content .col_1{width:377px;}
+#page2 #content .separate{ width:43px;}
+#page2 #content .col_2{width:222px;}
+/*=========================*/
+
+/*======= index-2.html =======*/
+#page3 #content .col_1{width:217px;}
+#page3 #content .separate{ width:47px;}
+#page3 #content .col_2{width:378px;}
+/*=========================*/
+
+/*======= index-3.html =======*/
+#page4 #content .col_1{width:377px;}
+#page4 #content .separate{ width:47px;}
+#page4 #content .col_2{width:220px;}
+/*=========================*/
+
+/*======= index-4.html =======*/
+#page5 #content .col_1{width:259px;}
+#page5 #content .separate{ width:47px;}
+#page5 #content .col_2{width:334px;}
+/*=========================*/
+
+/*======= index-5.html =======*/
+#page6 #content .col_1{width:376px;}
+#page6 #content .separate{ width:47px;}
+#page6 #content .col_2{width:217px;}
+/*=========================*/
+
+/*======= index-6.html =======*/
+#page7 #content .col_1{width:223px;}
+#page7 #content .separate{ width:47px;}
+#page7 #content .col_2{width:376px;}
+/*=========================*/
+
+/*======= index-7.html =======*/
+#page8 #content .col_1{width:637px;}
+/*=========================*/
+
+
+

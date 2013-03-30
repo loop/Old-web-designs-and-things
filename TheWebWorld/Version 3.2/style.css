@@ -1,0 +1,28 @@
+body {margin:0px; padding:0px; vertical-align:top; background:url(images/back.jpg) no-repeat top #2BA3F4;}
+td {font-size:9px; font-family:Arial; color:#FFFFFF; line-height:12px; vertical-align:top; text-transform:uppercase;}
+a {border:none; text-decoration:underline; color:#FFFFFF;}
+a:hover {text-decoration:none;}
+form {margin:0px; padding:0px;}
+/****************************************************/
+.h_txt {color:#CECECE; font-size:10px; font-family:Tahoma; text-transform:none;}
+.h_link {color:#CECECE; font-size:10px; font-family:Tahoma; text-decoration:none; text-transform:none;}
+.h_link:hover {text-decoration:underline;}
+
+
+.footertxt {color:#CEE7FC;font-size:9px; text-transform:uppercase;}
+.footerlink {color:#CEE7FC;font-size:9px;text-decoration:none; text-transform:uppercase;}
+.footerlink:hover{text-decoration:underline;}
+/****************************************************/
+.link1 {text-decoration:underline;color:#FFFFFF; background:url(images/pimp1.gif) no-repeat left; padding-left:10px;}
+.link1:hover {text-decoration:none;}
+/****************************************************/
+ul {margin:0; padding:0; list-style:none}
+li {background: url(images/pimp1.gif) no-repeat  left; padding-left:10px; line-height:18px; color:#FFFFFF;}
+li a {color:#FFFFFF; text-decoration:underline;}
+li a:hover {text-decoration:none;}
+/****************************************************/
+.myform {width:173px; margin:0px; padding-left:3px; padding-right:0; padding-top:0; padding-bottom:0; height:18px; vertical-align:middle;font-size:11px;font-family:Tahoma;color:#8C8C8C;background:#ffffff;}
+/****************************************************/
+
+.txt1 {color:#E1FFBE; font-weight:bold; font-family:Tahoma;}
+.txt2 {background:#FBFDFF; padding:2px 10px 2px 5px; color:#149CFF;}

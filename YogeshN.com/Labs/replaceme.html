@@ -1,0 +1,73 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="description" content="Mogrify text!" /> 
+   <title>ReplaceMe</title> 
+   <style> 
+body,html{background: #333333;}body{font-family: Georgia; line-height: 1.5em;	}textarea { position: relative; height: 20em; margin: 0px; width: 98%; font-size: large; padding: 5pt; resize: none; text-align: left;}textarea,input{background: #eeeeee;}#search, #replace {width: 8em;}del { background: #ffcccc; }ins { background: #ccffcc; text-decoration: none;}pre {color: black;padding: 5pt;text-align: left;white-space: pre-wrap;white-space: -moz-pre-wrap !important;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;margin-top: 0px;}.results {position: relative;}pre, textarea,input {  font-size: large; font-family: Courier, Courier New, monospace;}select { font-size: large; font-family: Georgia; }.toggle { text-align:left; margin-bottom: 1px; font-weight: bold;}.toggle a { padding: 2px 5px; color: black; text-decoration: none; margin-right: 2px;}.toggle a:hover { color: white; background: black; }.new { background: #cccccc; }.diff { background: #aaaaaa; }div.window {position: absolute; bottom: 3em; left: 1em; text-align: left}div.delete {display: none; position: absolute; top: 0.5em; right: 1em; text-align: left}a.window, a.delete {color: white; text-decoration: none;}a.window:hover, a.delete:hover { color: black; }#template {display: none;}.app {margin: 2em 2em 4em 2em}.i { display: none; color: white; text-align: center; position: relative; background: #555555; margin: 0em 2em; padding: 2em; -webkit-box-shadow: 5px 5px 5px black; -moz-box-shadow: 5px 5px 5px black; box-shadow: 5px 5px 5px black;}.everyother {background: #777777;}.from { position: relative; width: 100%; font-size: 4em; margin-top: 0px; padding-top: 0px; line-height: 1em; color: black; text-align: center; top: -1em; margin-bottom: -1em; color: #777777;}.everyother .from { color: #555555;}.original {display: block;}h1{ text-align: center; color: white;}.before,.after { width: 5em;}.before,.after,.copy { display: none;}
+   </style> 
+   <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script> 
+   <script type="text/javascript"> 
+var kuT;escape=function(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");};rescape=function(s){return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g,"\\$&");};sR=function(i){var _1=$(".rule",i).val();if(_1=="before"){$(".copy",i).html(escape($(".search",i).val()));$(".before, .copy",i).fadeIn();$(".after",i).fadeOut();}else{if(_1=="after"){$(".copy",i).html(escape($(".search",i).val()));$(".after, .copy",i).fadeIn();$(".before",i).fadeOut();}else{if(_1=="between"){$(".copy",i).html(escape($(".search",i).val()));$(".before, .after, .copy",i).fadeIn();}else{$(".before, .after, .copy",i).fadeOut();}}}var _2=i.next(".i");if(_2.length<1){if(!$(".replace",i).val()&&!$(".search",i).val()){return false;}$(i).after("<div class=\"i\">"+$("#template").html()+"</div>");_2=i.next(".i");sEv(_2);$(".rule",_2).val($(".rule",i).val());$(".case",_2).attr("checked",$(".case",i).attr("checked"));$(".delete",i).show();if($("pre",i).hasClass("new")){$("pre",_2).addClass("new").removeClass("diff");}}if(!i.hasClass("everyother")){_2.addClass("everyother");}else{_2.removeClass("everyother");}if($("pre",i).length){var _3=$("pre",i).data("newText");}else{var _3=escape($("textarea",i).val());}if($(".search",i).val()){var _4="mg";if($(".case",i).attr("checked")){_4=_4+"i";}if(_1=="regex"){var _5=new RegExp(escape($(".search",i).val()),_4);}else{if(_1=="whole"){var _5=new RegExp("\\b"+rescape(escape($(".search",i).val()))+"\\b",_4);}else{if(_1=="start"){var _5=new RegExp("^"+rescape(escape($(".search",i).val())),_4);}else{if(_1=="end"){var _5=new RegExp(rescape(escape($(".search",i).val()))+"$",_4);}else{if(_1=="before"){var _5=new RegExp(rescape(escape($(".search",i).val()))+"("+rescape(escape($(".before",i).val()))+")",_4);}else{if(_1=="after"){var _5=new RegExp("("+rescape(escape($(".after",i).val()))+")"+rescape(escape($(".search",i).val())),_4);}else{if(_1=="between"){var _5=new RegExp("("+rescape(escape($(".after",i).val()))+")"+rescape(escape($(".search",i).val()))+"("+rescape(escape($(".before",i).val()))+")",_4);}else{var _5=new RegExp(rescape(escape($(".search",i).val())),_4);}}}}}}}if(_1=="regex"){var _6=escape($(".replace",i).val()).replace(/(\$\&)amp\;/g,"$1");}else{if(_1=="before"){var _6=escape($(".replace",i).val()).replace(/(\$\&)amp\;/g,"$1")+"$1";}else{if(_1=="after"){var _6="$1"+escape($(".replace",i).val()).replace(/(\$\&)amp\;/g,"$1");}else{if(_1=="between"){var _6="$1"+escape($(".replace",i).val()).replace(/(\$\&)amp\;/g,"$1")+"$2";}else{var _6=escape($(".replace",i).val()).replace(/\$/g,"&#36;");}}}}var _7=_3.replace(_5,_6);var _8=_3.replace(_5,"<del>"+"$&"+"</del>"+"<ins>"+_6+"</ins>");}else{var _7=_3;var _8=_3;}$("pre",_2).data("diffText",_8);$("pre",_2).data("diffText",_8);$("pre",_2).data("newText",_7);if($("pre",_2).hasClass("new")){$("pre",_2).html(_7);}else{$("pre",_2).html(_8);}_2.slideDown();sR(_2);};searchUpdate=function(e){clearTimeout(kuT);kuT=setTimeout(function(){sR($(e.target).parents(".i"));},500);};sEv=function(i){$(".search",i).keyup();$(".replace",i).keyup(searchUpdate).change(searchUpdate).click(searchUpdate);$(".replace, .search, .rule, .case, textarea, .before, .after",i).keyup(searchUpdate).change(searchUpdate).click(searchUpdate);$("a.diff",i).click(function(e){var _9=$(this).parent().next("pre");_9.html(_9.data("diffText"));_9.addClass("diff").removeClass("new");return false;});$("a.new",i).click(function(e){var _a=$(this).parent().next("pre");_a.html(_a.data("newText"));_a.addClass("new").removeClass("diff");return false;});$("a.window",i).click(function(e){var _b=$(this).parent("div.window").next(".results");if(_b.css("display")=="none"){_b.slideDown();$(this).html("&#9652;");}else{_b.slideUp();$(this).html("&#9662;");}return false;});$("a.delete",i).click(function(e){parentI=$(this).parents(".i");parentI.fadeOut(function(){var _c=parentI.prev(".i");parentI.remove();sR(_c);});return false;});};$(function(){var i=$(".i");sEv(i);$(".search",i).val("men");$(".replace",i).val("kittehs");setTimeout(function(){sR(i);$(".rule",i).val("whole");sR(i);},500);});
+   </script> 
+  </head> 
+ <body> 
+ 	<div class="app"> 
+ 		<h1>TextMogrifier</h1> 
+	 	<div class="i original"> 
+			<form class="buildSearch"> 
+				<textarea class="text" spellcheck="false">No one would have believed in the last years of the nineteenth century that this world was being watched keenly and closely by intelligences greater than man's and yet as mortal as his own; that as men busied themselves about their various concerns they were scrutinised and studied, perhaps almost as narrowly as a man with a microscope might scrutinise the transient creatures that swarm and multiply in a drop of water.  With infinite complacency men went to and fro over this globe about their little affairs, serene in their assurance of their empire over matter.  It is possible that the infusoria under the microscope do the same.  No one gave a thought to the older worlds of space as sources of human danger, or thought of them only to dismiss the idea of life upon them as impossible or improbable.  It is curious to recall some of the mental habits of those departed days.  At most terrestrial men fancied there might be other men upon Mars, perhaps inferior to themselves and ready to welcome a missionary enterprise.  Yet across the gulf of space, minds that are to our minds as ours are to those of the beasts that perish, intellects vast and cool and unsympathetic, regarded this earth with envious eyes, and slowly and surely drew their plans against us.  And early in the twentieth century came the great disillusionment.</textarea> 
+				<p> 
+					<label for="search">Replace</label> <input class="search" name="search" spellcheck="false" /> <label for="replace">with</label> <input name="replace" class="replace" spellcheck="false" /> 
+					<select name="rule" class="rule"> 
+						<option value="everywhere">everywhere</option> 
+						<option value="whole">whole words only</option> 
+						<option value="start">at the beginning of a line</option> 
+						<option value="end">at the end of a line</option> 
+						<option value="before">before...</option> 
+						<option value="after">after...</option> 
+						<option value="between">between...</option> 
+						<option value="regex">as a regular expression</option>	
+					</select> 
+					<input class="after" name="after" /> <span class="copy"></span> <input class="before" name="before" />	
+					<input type="checkbox" class="case" name="case" checked="checked" /> <label for="case">ignore&nbsp;case</label> 
+				</p> 
+			</form> 
+		</div> 
+	</div> 
+	<div id="template"> 
+		<div class="from">&#9662;</div> 
+		<div class="delete"> 
+			<a href="#delete" class="delete">&#9760;</a> 
+		</div> 
+		<div class="window"> 
+			<a href="#window" class="window">&#9652;</a> 
+		</div> 
+		<div class="results"> 
+			<div class="toggle"> 
+				<a href="#new" class="new">new version</a><a href="#diff" class="diff">difference</a> 
+			</div> 
+			<pre class="diff"></pre> 
+		</div> 
+		<form class="buildSearch"> 
+			<p> 
+				<label for="search">Replace</label> <input class="search" name="search" /> <label for="replace">with</label> <input name="replace" class="replace" /> 
+				<select class="rule"> 
+					<option value="everywhere">everywhere</option> 
+					<option value="whole">whole words only</option> 
+					<option value="start">at the beginning of a line</option> 
+					<option value="end">at the end of a line</option> 
+					<option value="before">before...</option> 
+					<option value="after">after...</option> 
+					<option value="between">between...</option> 
+					<option value="regex">as a regular expression</option> 
+				</select> 
+				<input class="after" name="after" /> <span class="copy"></span> <input class="before" name="before" />	
+				<input type="checkbox" class="case" name="case" checked="checked" /> <label for="case">ignore case</label> 
+			</p> 
+		</form> 
+	</div> 
+ </body> 
+</html>

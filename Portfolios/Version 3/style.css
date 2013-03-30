@@ -1,0 +1,39 @@
+body {padding:0; margin:0; background-color:#A6A609}
+body, td, input, textarea{
+	font-size:9px;
+    font-family:Arial;
+	color:#B0B0B0;
+	line-height:16px;
+	vertical-align:top;
+	padding:0px;
+	text-transform:uppercase
+}
+
+br{font-size:10px}
+table{border:0px; border-collapse:collapse;	}
+
+a{color:#FFFFFF; text-decoration:none} 
+a:hover{text-decoration:underline}
+li{background:url(images/3_z1.gif)  center left no-repeat; margin:0px 0px 0px 0px; padding:0px 0px 0px 12px }
+li a{color:#FFFFFF; text-decoration:underline} 
+li a:hover{text-decoration:none}
+ul{margin:0; padding:0; list-style:none; line-height:16px}
+.content b{color:#FFFFFF; font-weight:normal} 
+.content .block a{color:#FFFFFF; text-decoration:underline; font-size:12px; text-transform:none}
+.content .block a:hover{text-decoration:none} 
+.footer a{color:#939393;} 
+
+input{
+   background:#272727;
+   border:1px solid #888888;
+   padding-left:5px;
+   padding-top:3px;
+   width:165px; height:25px;
+}
+textarea{
+   background:#2D2D2D;
+   border:1px solid #888888;
+   padding-left:5px;
+   width:224px; height:118px;
+   overflow:auto;
+  }

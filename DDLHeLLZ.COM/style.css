@@ -1,0 +1,353 @@
+body { margin: 0; padding: 0; }
+#top_shadow { width: 100%; height: 18px; background-image: url('hcs_images/top_shadow.png'); background-repeat: repeat-x; margin-top: 0px; padding-top: 0px; }
+#header { width: 655px; height: 78px; margin: 10px auto 0 auto; }
+#logo {	float: left; border: 0; }
+#topright_area { text-align: right; color: #555555; float: right; margin: -5px 10px 0 0; width: 180px; height: 77px; padding: 0; }
+#topright_area a { color: #666666; font-family: arial, sans-serif; font-size: .8em; text-decoration: none; }
+#topright_area a:hover { text-decoration: underline; }
+#live_chat { width: 100px; height: 48px;  margin: 9px 0 0 78px; padding: 0; float: left; }
+#live_chat img { border: none; }
+#navigation { width: 655px; height: 55px; margin: 5px auto 10px auto; }
+#navigation ul { margin:0; padding:0; list-style:none; }
+#navigation ul li { float:left; margin:0; padding:0; height: 50px; }
+#navigation ul li a {
+	display: block;
+	height: 50px;
+	background-image: url('hcs_images/navigation.jpg');
+	background-repeat: no-repeat;
+}
+#navigation ul li a span { display: none; }
+#navi-home { width: 95px; }	
+#navi-home:hover { background-position: 0 -50px; }
+#navi-shared { width: 116px; background-position: -95px 0px; }	
+#navi-shared:hover { background-position: -95px -50px; }
+#navi-reseller { width: 125px; background-position: -211px 0px; }	
+#navi-reseller:hover { background-position: -211px -50px; }
+#navi-vps { width: 103px; background-position: -336px 0px; }	
+#navi-vps:hover { background-position: -336px -50px; }
+#navi-about { width: 102px; background-position: -439px 0px; }	
+#navi-about:hover { background-position: -439px -50px; }
+#navi-support { width: 109px; background-position: -541px 0px; }	
+#navi-support:hover { background-position: -541px -50px; }
+#footer { width: 651px; height: 74px; background-image: url('hcs_images/footer_bg.png'); padding: 0px; margin: 30px auto 20px auto; }
+#footer_links { font-family: arial, sans-serif; font-size: .8em; padding: 0; margin: 10px 0 14px 15px; height: 20px; width: 420px; float: left; }
+#footer_links li { float: left; list-style-type: none; margin-right: 16px; padding: 0; }
+#footer_links li a { color: #EEEEEE; text-decoration: none; }
+#footer_links li a:hover { color: #CCCCCC; }
+#terms { padding: 0; margin-top: 8px; float: left; margin-left: 20px; color: #DDDDDD; font-size: .8em; }
+#terms a { color: #EEEEEE; font-family: arial, sans-serif; }
+#terms a:hover { text-decoration: none; }
+#copyright { clear: left; color: #DDEEFF; font-family: arial, sans-serif; font-size: .75em; padding: 0; margin: 0px 0 0 12px; height: 20px; width: 420px; }
+#content { width: 655px; margin: 0 auto; border: 0px solid blue; }
+#difvps { margin:0; padding:0; list-style:none; color: #8E8E8E; text-align: center; font-size: 1em;}
+#difvps a { color: #000000; font-family: arial, sans-serif; font-size: 1em; }
+#difvps a:hover { text-decoration: none; }
+
+
+#promo_area { width: 655px; height: 150px; background-image: url('hcs_images/promo_area.png'); background-repeat: no-repeat; margin: 0px auto 10px auto; }
+
+
+
+
+
+
+
+
+
+/** HOME PAGE **/
+
+#banner {
+	width: 652px;
+	height: 257px;
+	margin: 0 auto;
+	background-image: url(hcs_images/Untitled-1.jpg);
+	background-repeat: no-repeat;
+        }
+
+#banner p {
+	width: 400px;
+	font-family: arial, sans-serif;
+	line-height: 1.3em;
+	padding-top: 80px;
+	margin: 0 0 0 50px;
+          }
+
+#package_area {
+	width: 655px;
+	height: 170px;
+	margin: 15px auto 0 auto;
+              }
+
+.packages {
+	float: left;
+	width: 212px;
+	height: 166px;
+	margin-right: 6px;
+	position: relative;
+	  }
+
+.packages ul {
+	margin: 0;
+	padding: 0;
+	color: #1177CC;
+	font-family: arial, sans-serif;
+	font-size: .75em;
+	margin-top: 48px;
+	font-weight: bold;
+             }
+
+.packages ul li {
+	margin: 4px 0 0 14px;
+	padding: 0;
+	list-style-type: none;
+	        }
+
+.packages a {
+	position: absolute;
+	right: 16px;
+	bottom: 8px;
+	color: #EEEEEE;
+	text-decoration: none;
+	font-family: arial, sans-serif;
+	font-size: .7em;
+	text-transform: uppercase;
+            }
+
+.packages a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+                  }
+
+#packages_starter {
+	background-image: url(hcs_images/news.jpg);
+	margin-left: 0px;
+	          }
+
+#packages_advanced {
+	background-image: url(hcs_images/reviews.jpg);
+	          }
+
+#packages_premium {
+	background-image: url(hcs_images/aff.jpg);
+	margin-left: 2px;
+	margin-right: 0 !important;
+	          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** WEB-HOSTING PAGE **/
+
+#wh-heading2 p {
+	font-size: .8em;
+	color: #DDDDDD;
+	width: 350px;
+	font-family: arial, sans-serif;
+	margin: 0 0 0 265px;
+	padding-top: 10px;
+	line-height: 1.1em;
+              }
+
+#wh-heading3 p {
+	font-size: .8em;
+	color: #DDDDDD;
+	width: 340px;
+	font-family: arial, sans-serif;
+	margin: 0 0 0 310px;
+	padding-top: 10px;
+	line-height: 1.1em;
+              }
+
+#wh-heading p {
+	font-size: .8em;
+	color: #DDDDDD;
+	width: 350px;
+	font-family: arial, sans-serif;
+	margin: 0 0 0 265px;
+	padding-top: 10px;
+	line-height: 1.1em;
+              }
+
+#wh-table {
+	font-family: arial, sans-serif;
+	font-size: .75em;
+	width: 646px;
+	margin: -22px 0 0 3px;
+	padding: 0;
+	border-collapse: collapse;
+	border: 1px solid #DDDDDD;
+	table-layout: fixed;
+	color: #666666;
+	  }
+
+#wh-table strong {
+	color: #444444;
+                 }
+
+#wh-table th {
+	border-top: 0; /** for IE **/
+	color: #0066BB;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding-top: 15px;
+	padding-bottom: 3px;
+             }
+
+.wh-ntp {
+	padding-top: 0px !important;
+             }
+
+.wh-feature {
+	width: 150px;
+	padding-left: 0px !important;
+	padding-right: 17px !important;
+	text-align: right !important;
+	border-left: 0px; /** for IE **/
+            }
+
+#wh-table td {
+	text-align: center;
+	width: 25%;
+	padding-top: 3px;
+	padding-bottom: 2px;
+             }
+
+#wh-table td span {
+	display: block;
+        color: #008822;
+	font-weight: normal !important;
+	font-style: italic;
+	font-size: .9em;
+                  }
+
+#wh-order {
+	width: 500px;
+	padding-left: 148px;
+	margin-top: 20px;
+	  }
+
+#wh-table2 {
+	font-family: arial, sans-serif;
+	font-size: .75em;
+	width: 646px;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border: 0;
+	table-layout: fixed;
+	color: #666666;
+        text-align: center;
+        life-style: none;
+	  }
+
+#wh-table2 strong {
+	color: #444444;
+                 }
+
+#wh-table2 th {
+	border-top: 0; /** for IE **/
+	color: #0066BB;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding-top: 15px;
+	padding-bottom: 3px;
+             }
+
+
+.wh-ntp2 {
+	padding-top: 0px !important;
+             }
+
+.wh-feature2 {
+	width: 642px;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	text-align: center !important;
+	border-left: 0px; /** for IE **/
+            }
+
+.wh-feature3 {
+	width: 642px;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	text-align: left !important;
+	border-left: 0px; /** for IE **/
+            }
+
+.wh-feature4 {
+	width: 380px;
+	padding-left: 0px !important;
+	padding-right: 17px !important;
+	text-align: right !important;
+	border-left: 0px; /** for IE **/
+            }
+
+.wh-feature5 {
+	width: 70px;
+	padding-left: 0px !important;
+	padding-right: 17px !important;
+	text-align: right !important;
+	border-left: 0px; /** for IE **/
+            }
+
+.wh-feature6 {
+	width: 350px;
+	padding-left: 0px !important;
+	padding-right: 17px !important;
+	text-align: center !important;
+	border-left: 0px; /** for IE **/
+            }
+
+.wh-feature7 {
+	width: 642px;
+	padding-left: 0px !important;
+	padding-right: 17px !important;
+	text-align: center !important;
+	border-left: 0px; /** for IE **/
+            }
+
+
+#wh-link {
+        list-style: none;
+        color: #8E8E8E;
+        font-size: 1em;
+        }
+
+.wh-link a { 
+        color: #000000;
+        font-family: arial, sans-serif; 
+        font-size: 1em;
+        }
+
+.wh-link a:hover {
+        text-decoration: none;
+        }
+
+#wh-table2 td {
+	text-align: center;
+	width: 25%;
+	padding-top: 3px;
+	padding-bottom: 2px;
+             }
+
+#wh-table2 td span {
+	display: block;
+        color: #008822;
+	font-weight: normal !important;
+	font-style: italic;
+	font-size: .9em;
+                  }

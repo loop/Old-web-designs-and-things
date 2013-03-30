@@ -1,0 +1,150 @@
+* { margin:0; padding:0;}
+body{ background:#3e3a37; padding-top:9px;}
+html, input, textarea, select{font-family:Georgia, "Times New Roman", Times, serif; font-size:11px; color:#b8b4a5;}
+
+
+/*in_line*/
+input, select { vertical-align:middle; font-weight:normal;}
+img {border:0; vertical-align:top; text-align:left;}
+ul { list-style:none;}
+
+
+a:hover{text-decoration:none;}
+a {color:#dddad1;}
+
+.column { float:left;}
+.clear { clear:both;}
+
+b{ color:#c81921;}
+
+
+#content span{ color:#c81921; font-size:10px; font-family:Arial;}
+#content span img{ margin-right:9px; margin-bottom:5px;}
+#content span a{ color:#c81921; font-size:11px;}
+
+/*header*/
+#header_logo{ width:729px;}
+#header_logo .col_1{ width:574px;}
+#header_logo .col_1 img{ margin:13px 0 0 36px;}
+#header_logo .col_2{ padding-top:28px;}
+#header_menu{ text-indent:8px;}
+.h_baner{ margin:10px 0 26px 3px;}
+.h_content{ width:707px; color:#3e3a37; line-height:15px;}
+
+/*footer*/
+#footer{margin:18px 0 0 11px; width:707px;}
+.indent_footer{ padding:17px 0 16px 39px; color:#807d73; line-height:18px;}
+.indent_footer a{ color:#807d73; word-spacing:normal;}
+.indent_footer strong a{ color:#a6a39a;}
+.indent_footer span{ display:block; font-size:12px; word-spacing:13px;}
+
+/*content*/
+#content{ margin-bottom:18px; line-height:16px;}
+.height_content{ width:11px; float:left; height:277px;}
+#header_content a{ color:#c81921;}
+#content .title{ background:url(images/title_wr.gif) bottom left repeat-x; height:33px; margin:22px 0 26px 0;}
+#content .title img{ margin-left:2px;}
+.line_dot{ background:url(images/line_dot.gif) top left repeat-x; margin:12px 0 5px 0;}
+.link{ display:block;}
+#header_content .col_1{ width:633px; padding-bottom:20px;}
+
+/*================== index.html ==================*/
+#page1 #header_content .height_h{ height:158px; float:left; width:36px;}
+#page1 #header_content .col_1 .indent_text{ margin:7px 0 18px 0;}
+
+#page1 #content .col_1{ padding-top:11px;}
+#page1 #content .col_1 img{ display:block}
+#page1 #content .col_1 .indent_img{ margin:5px 0;}
+
+#page1 #content .col_2 .link{ margin:5px 0 0 280px;}
+
+/*================== index-1.html ==================*/
+#page2 #header_content .height_h{ height:128px; float:left; width:36px;}
+#page2 #header_content .col_1 .title{ display:block; margin-bottom:11px;}
+
+#page2 #content .col_1 .indent_img{ margin-right:23px; float:left;}
+#page2 #content .col_1 .indent_text{ margin:19px 0;}
+
+#page2 #content .col_2 .link{ margin:5px 0 0 99px;}
+#page2 #content .col_2 .indent_text{ text-align:right; margin:4px 0 11px 0;}
+
+/*================== index-2.html ==================*/
+#page3 #header_content .height_h{ height:158px; float:left; width:36px;}
+#page3 #header_content .col_1 .title{ display:block; margin-bottom:11px;}
+#page3 #header_content .col_1 .indent_img{ margin:1px 18px 0 0; float:left;}
+
+#page3 #content .col_1 .indent_text{ margin:19px 0;}
+
+#page3 #content .col_2 .indent_img{ margin-right:21px; float:left;}
+#page3 #content .col_2 .link{ margin:7px 0 0 0; float:right;}
+
+/*================== index-3.html ==================*/
+#page4 #header_content .height_h{ height:171px; float:left; width:36px;}
+#page4 #header_content .col_1 .title{ display:block; margin-bottom:11px;}
+#page4 #header_content .col_1 .indent_text{ margin:14px 0;}
+
+#page4 #content .col_1 .indent_text{ margin:19px 0;}
+#page4 #content .col_1 .indent_img{ margin-right:21px; float:left;}
+
+#page4 #content .col_2 .link{ margin:7px 0 0 0; float:right;}
+
+/*================== index-4.html ==================*/
+#page5 #header_content .height_h{ height:158px; float:left; width:36px;}
+#page5 #header_content .col_1 .title{ display:block; margin-bottom:11px;}
+#page5 #header_content .col_1 .indent_text{ margin:10px 0;}
+
+#page5 #content .col_1 .indent_text{ margin:18px 0;}
+#page5 #content .col_1 .indent_img{ margin-right:21px; float:left;}
+
+#page5 #content .col_2 .indent_img{margin-right:21px; float:left;}
+
+/*================== index-5.html ==================*/
+#page6 #content .col_1 .indent_img{ margin-right:21px; float:left;}
+#page6 #content .col_1 .link{ margin:15px 0 0 0; float:right;}
+
+#page6 #content .col_2 .indent_img{margin-right:21px; float:left;}
+
+/*================== index-6.html ==================*/
+#page7 #header_content .height_h{ height:158px; float:left; width:36px;}
+#page7 #header_content .col_1 .title{ display:block; margin-bottom:11px;}
+#page7 #header_content .col_1 .indent_text{ margin:10px 0;}
+
+#page7 #content .col_1 .indent_text{ margin:18px 0;}
+
+#page7 #content .col_2 .indent_img{margin-right:21px; float:left;}
+
+#page7 #content .col_2 .col_box{ width:380px;}
+#page7 #content .col_2 .col_box_1{ width:95px;}
+#page7 #content .col_2 .col_box_2{ width:280px;}
+
+#page7 #content .col_2 input{ width:270px; height:20px;}
+#page7 #content .col_2 textarea{ width:270px; height:110px; overflow:auto; margin-bottom:16px;}
+#page7 #content .col_2 textarea, #page7 #content .col_2 input{ color:#000000; font-family:Tahoma; font-size:11px;}
+#page7 #content .h_f{ height:30px;}
+
+/*================== index-7.html ==================*/
+#page8 #content .col_1 .indent_text{ margin:0 0 15px 0;}
+
+
+
+
+/*==================list====================*/
+.header_con { width:100%;}
+.header_con .t { background:url(images/con_line1.gif) repeat-x top #ffffff;}
+.header_con .b { background:url(images/con_line1.gif) repeat-x bottom;}
+.header_con .l { background:url(images/con_line.gif) repeat-y left;}
+.header_con .r { background:url(images/con_line.gif) repeat-y right;}
+.header_con .l_t { background:url(images/con_left_top_h.gif) no-repeat left top;}
+.header_con .r_t { background:url(images/con_right_top_h.gif) no-repeat right top;}
+.header_con .l_b { background:url(images/con_left_bot_h.gif) no-repeat left bottom;}
+.header_con .r_b { background:url(images/con_right_bot_h.gif) no-repeat right bottom;}
+
+.footer_con { width:100%;}
+.footer_con .t { background:url(images/con_top_left_f.gif) no-repeat left top #272522;}
+.footer_con .b { background:url(images/con_top_right_f.gif) no-repeat right top;}
+.footer_con .l { background:url(images/con_bot_left_f.gif) no-repeat left bottom;}
+.footer_con .r { background:url(images/con_bot_right_f.gif) no-repeat right bottom;}
+
+
+li a {background:url(images/list_bull.gif) center left no-repeat; padding:0 0 0 12px; line-height:19px; color:#dddad1; font-weight:bold;}
+/*==========================================*/
